@@ -218,3 +218,33 @@ ON (ri.emp_no = de.emp_no)
 INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no)
 WHERE d.dept_name IN ('Sales','Development');
+
+-----------------------------------------------------------------------------------
+--Module 7 - Challenge
+
+-- To build "all_current_emp" table with 240,124ppl
+SELECT DISTINCT ON (e.emp_no)
+	e.emp_no,
+	e.first_name,
+	e.last_name,
+	e.birth_date,
+	d.dept_name,
+	t.title,
+	t.from_date,
+	t.to_date
+--INTO all_current_emp
+FROM employees as e
+INNER JOIN titles as t
+ON (e.emp_no = t.emp_no)
+INNER JOIN dept_emp as de
+ON (e.emp_no = de.emp_no)
+INNER JOIN departments AS d
+ON (de.dept_no = d.dept_no)
+WHERE t.to_date = ('9999-01-01');
+
+SELECT COUNT (emp_no)
+	emp_no,
+	title
+FROM all_current_emp
+GROUP BY title
+ORDER BY COUNT (emp_no) DESC;
