@@ -7,17 +7,17 @@ This challenge was our first attempt to build a simple database and use SQL to r
 ### Results
 
 Pewlett Harkard has: 
-*240,124 total employees
+* 240,124 total employees
 
 ![all_current_emp_by_title](https://user-images.githubusercontent.com/88510296/134974908-7ef59f6b-0eef-489e-9cb0-eb3b20ffbff4.png)
 
 
-*90,398 Total Employees born between Jan 1, 1952 and Dec 31, 1955
+* 90,398 Total Employees born between Jan 1, 1952 and Dec 31, 1955
 
 ![retirement_eligible_by_title](https://user-images.githubusercontent.com/88510296/134974984-b91835d9-abca-4b0c-9288-0d82b88aacb8.png)
 
 
-*1,549 Mentorship Eligibility program
+* 1,549 Mentorship Eligibility program
 
 ![mentorship_eligibility_program_by_title](https://user-images.githubusercontent.com/88510296/134975035-1ee75c7a-9b9e-478e-a146-191bb5af75c0.png)
 
