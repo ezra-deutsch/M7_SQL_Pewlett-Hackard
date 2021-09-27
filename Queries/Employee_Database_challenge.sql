@@ -1,4 +1,6 @@
 
+-- Deliverable #1: "retirement_titles.csv" "unique_titles.csv" and "retiring_titles.csv"
+
 SELECT e.emp_no,
 	e.first_name, 
 	e.last_name,
@@ -30,6 +32,7 @@ FROM unique_titles
 GROUP BY title
 ORDER BY COUNT (emp_no) DESC;
 
+-- Deliverable #2: "mentorship_eligibility.csv" 
 
 SELECT DISTINCT ON (e.emp_no)
 	e.emp_no,
